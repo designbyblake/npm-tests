@@ -1,0 +1,23 @@
+{
+  "in": "build/_temp/screen.css",
+  "out": "public/assets/css/screen.css",
+  "autoprefixer": {"browsers":[
+    "last 3 versions",
+    "ios 7",
+    "ios 8",
+    "ios 9"
+  ]},
+  "filters": true,
+  "rem": false,
+  "pseudoElements": true,
+  "opacity": false,
+
+  "import": true,
+  "minifier": false,
+  "mqpacker": false,
+
+  "sourcemaps": false,
+
+  "next": false
+}
+
