@@ -13,6 +13,8 @@
     "browserify": "^13.1.1",
     "clean-css": "^3.4.23",
     "concurrently": "^3.1.0",
+    "eslint": "^3.13.1",
+    "eslint-nibble": "^3.1.0",
     "gulp": "^3.9.1",
     "gulp-combine-mq": "^0.4.0",
     "gulp-file-include": "^1.0.0",
@@ -43,6 +45,10 @@
     "watch:all": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:html\"",
     "minify:css": "npm run build:css && cleancss -o public/assets/css/screen.css public/assets/css/screen.css",
     "minify:js": "npm run js:scripts && npm run build:js:prod",
-    "prod": "npm run minify:css && npm run minify:js"
+    "prod": "npm run minify:css && npm run minify:js",
+    "sync": "cd public && browser-sync start --server --files \"**/**/*.*\"",
+    "server:build": "concurrently \"npm run sync\" \"npm run watch:all\"",
+    "eslint": "eslint \"build/_js/_custom/**\"",
+    "nibble": "eslint-nibble \"build/_js/_custom/**\""
   }
 }
