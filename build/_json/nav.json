@@ -1,0 +1,12 @@
+{
+  "nav": [
+    {
+      "title":"Home",
+      "link":"/home/"
+    },
+    {
+      "title":"Test",
+      "link":"/test/"  
+    }
+  ]
+}

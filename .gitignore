@@ -1,5 +1,6 @@
 node_modules
 npm-debug.log
-
+/reports/
+/build/_dirty/
 .DS_STORE
 *.swp
